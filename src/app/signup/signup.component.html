@@ -1,0 +1,31 @@
+
+<div class="container">
+    <div class="form-container">
+    
+    <div class="form-card">
+        <div class='card-body'>
+        
+            <div class="welcome"> Veuillez remplir ce formulaire la ! </div>
+        <form >
+            <div class="inputs">
+            <input [(ngModel)] ="form.nom"type="text" name="nom" placeholder="saisir votre nom ">
+            <input [(ngModel)]= "form.prenom" type="text" name="prenom" placeholder="saisir votre prenom ">
+            <input [(ngModel)] ="form.email" type="email" name="email" placeholder="saisir votre email ">
+            <input [(ngModel)] ="form.password" type="password" name="password" placeholder="saisir votre mot de passe ">
+            <input [(ngModel)]= "form.cin"  type="number" name="cin" placeholder="saisir votre cin">
+            <input [(ngModel)] ="form.number" type="number" name="age" placeholder="saisir votre age ">
+            </div>
+            <button (click)="onSubmit()" class="signup-btn"> Ajouter</button>
+            <button class="signup-btn"> Voir les utilisareurs </button>
+          
+        
+            
+        </form>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+

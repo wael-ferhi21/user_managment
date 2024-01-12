@@ -1,0 +1,18 @@
+<table class="table" *ngFor="let item of users">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nom </th>
+        <th scope="col">Prenom </th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">1</th>
+        <td>{{item.nom}}</td>
+        <td>{{item.prenom}}</td>
+        <td>{{item.email}}</td>
+      </tr>
+      </tbody>
+  </table>
