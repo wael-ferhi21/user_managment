@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { AuthService } from '../services/auth.service';
+import { User } from '../models/user';
 
 @Component({
   selector: 'app-signup',
@@ -8,14 +9,16 @@ import { AuthService } from '../services/auth.service';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  form: any = {
+  /*form: any = {
     nom: null,
     prenom:null,
     email: null,
     age:null,
     cin:null,
     password: null
-  };
+  };*/
+
+  user:User=new User()
   isSuccessful = false;
   isSignUpFailed = false;
   errorMessage = '';
@@ -30,19 +33,8 @@ export class SignupComponent implements OnInit {
   }
 
   onSubmit(): void {
-    const { nom ,
-      prenom,
-      email ,
-      age,
-      cin,
-      password } = this.form;
 
-    this.authService.register( nom ,
-    prenom,
-    email ,
-    age,
-    cin,
-    password).subscribe({
+    this.authService.register(this.user).subscribe({
       next: data => {
         console.log(data);
         this.isSuccessful = true;

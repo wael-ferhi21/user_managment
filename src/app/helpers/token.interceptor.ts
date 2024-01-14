@@ -1,4 +1,4 @@
-import { AuthenticationService } from '../services/authentication.service';
+/*import { AuthenticationService } from '../services/authentication.service';
 import {
     HttpEvent,
     HttpHandler,
@@ -25,4 +25,4 @@ export class TokenInterceptor implements HttpInterceptor {
     }
     return next.handle(request);
   }
-}
+}*/

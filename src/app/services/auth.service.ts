@@ -18,11 +18,10 @@ export class AuthService {
     constructor(private http: HttpClient){}
 
 
-
-  register(email:string,nom:string,prenom:string,password:string,cin:number,age:number) {
-    return this.http.post(`${environment.apiUrl}/user/create`,
-     {email,nom,prenom,password,cin,age},
-     httpOptions);
+//envoyer un seul objet
+  register(user:any) {
+    return this.http.post(`${environment.apiUrl}/users`,
+    user);
   }
 
 
