@@ -16,7 +16,7 @@
         <td>{{item.nom}}</td>
         <td>{{item.prenom}}</td>
         <td>{{item.email}}</td>
-        <td></td>
+        <td><button class="delete-btn" (click)="deleteUser(item.id)">Supprimer</button></td>
       </tr>
       </tbody>
   </table>

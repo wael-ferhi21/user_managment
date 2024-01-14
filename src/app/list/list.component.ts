@@ -31,4 +31,13 @@ getAllusers(){
   )
 }
 
+deleteUser(id : number){
+  this._listservice.deleteUser(id).subscribe(
+   (response)=>{
+      this.getAllusers()
+    }
+
+    )
+}
+
 }

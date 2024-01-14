@@ -21,4 +21,9 @@ export class ListService {
     return this.http.get<User[]>(`${environment.apiUrl}/users`);
    
   }
+
+  
+  deleteUser(id: number): Observable<void> {
+    return this.http.delete<void>(`${environment.apiUrl}/users/${id}`);
+  }
 }
