@@ -2,8 +2,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 0;
   }
   
   .table {
@@ -34,6 +32,9 @@ body {
     background-color: #8ee8ff;
   }
 
+  .table-title {
+    text-align: center; /* Centre le texte horizontalement */
+}
 
   button.delete-btn {
     background-color: #dc3545;
