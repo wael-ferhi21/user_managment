@@ -33,7 +33,7 @@ body {
   }
 
   .table-title {
-    text-align: center; /* Centre le texte horizontalement */
+    text-align: center;
 }
 
   button.delete-btn {
