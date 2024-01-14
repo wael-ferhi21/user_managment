@@ -17,7 +17,7 @@ export class SignupComponent implements OnInit {
     cin:null,
     password: null
   };*/
-
+// changer form par user:User=new User()
   user:User=new User()
   isSuccessful = false;
   isSignUpFailed = false;
@@ -31,6 +31,9 @@ export class SignupComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+  //changer nom , prenom, email , age, cin, password par this.user (class user)
 
   onSubmit(): void {
 

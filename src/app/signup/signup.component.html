@@ -6,6 +6,7 @@
         <div class='card-body'>
         
             <div class="welcome"> Veuillez remplir ce formulaire la ! </div>
+            <!--Declare fonction d'ajout dans form par ngsubmit-->
         <form (ngSubmit)="onSubmit()">
             <div class="inputs">
             <input [(ngModel)] ="user.nom"type="text" name="nom" placeholder="saisir votre nom ">
@@ -15,6 +16,8 @@
             <input [(ngModel)]= "user.cin"  type="number" name="cin" placeholder="saisir votre cin">
             <input [(ngModel)] ="user.age" type="number" name="age" placeholder="saisir votre age ">
             </div>
+
+            <!-- Ajouter type submit au button Ajouter -->
             <button type="submit" class="signup-btn"> Ajouter</button>
             <button class="signup-btn"> Voir les utilisareurs </button>
           
