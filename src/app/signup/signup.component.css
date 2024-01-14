@@ -1,62 +1,74 @@
-
-.form-card{
-    margin: 4%;
-box-shadow: 20%;
-
-}
-
-
-.card-body{
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .form-card {
+    padding: 20px;
+    background-color: rgb(241, 149, 137);
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .welcome {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .inputs {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0px auto;
-    padding: 9px 25px 25px;
-   
-}
-
-
-.welcome{
-   margin-left: 580px;
-   padding-top: 20px;
-   font-family: 'Merriweather Sans', sans-serif;
-   font-family: 'Poppins', sans-serif;
-}
-form{
-    text-align: center;
-    background-color: rgb(255, 251, 251);
-    padding: 4%;
+    gap: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ced4da;
     border-radius: 4px;
-    margin-top: 10px;
-    margin-left: 450px;
-    width: 30%;
-    align-items: center;
-    
-}
-
-input{
-    display: flex;
-    margin: 50px;
-    width: 200px;
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(234, 234, 234);
-    border: 1px solid rgb(218, 218, 218);
-    border-radius: 5px;
-    height: 30px;
-    
-}
-.inputs{
-    margin-left: 50px;
-}
-
-.signup-btn{
-  margin: 30px;
-    cursor: pointer;
-    background-color: rgb(10, 151, 239);
-    margin-top: 5%;
-    width: 180px;
-    height: 30px;
-    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  
+  .signup-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
     border: none;
-    font-family: 'Poppins', sans-serif;
-}
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; 
+  }
+  
+  .signup-btn:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  
+  .alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+  
+  .success-message {
+    font-weight: bold;
+  }
+  

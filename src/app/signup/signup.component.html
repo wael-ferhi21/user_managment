@@ -7,6 +7,12 @@
         
             <div class="welcome"> Veuillez remplir ce formulaire la ! </div>
             <!--Declare fonction d'ajout dans form par ngsubmit-->
+
+
+            <div *ngIf="isSuccessful" class="alert alert-success">
+                <span class="success-message">Utilisateur enregistré avec succès</span>
+              </div>
+              
         <form (ngSubmit)="onSubmit()">
             <div class="inputs">
             <input [(ngModel)] ="user.nom"type="text" name="nom" placeholder="saisir votre nom ">
@@ -19,7 +25,7 @@
 
             <!-- Ajouter type submit au button Ajouter -->
             <button type="submit" class="signup-btn"> Ajouter</button>
-            <button class="signup-btn"> Voir les utilisareurs </button>
+            <button class="signup-btn" routerLink="/usersdata"> Voir les utilisareurs </button>
           
         
             
