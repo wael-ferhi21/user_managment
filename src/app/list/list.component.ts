@@ -31,13 +31,17 @@ getAllusers(){
   )
 }
 
-deleteUser(id : number){
-  this._listservice.deleteUser(id).subscribe(
-   (response)=>{
-      this.getAllusers()
-    }
-
-    )
+deleteUser(userId: number): void {
+  const isConfirmed = window.confirm("Êtes-vous sûr de vouloir supprimer cet utilisateur?");
+  
+  if (isConfirmed) {
+    this._listservice.deleteUser(userId).subscribe(
+      (response) => {
+        this.getAllusers();
+      }
+    );
+  }
 }
+
 
 }
