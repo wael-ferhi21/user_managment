@@ -12,18 +12,23 @@ export class ListComponent implements OnInit {
   constructor(public _listservice:ListService) { }
 
   ngOnInit(): void {
-this._listservice.getUsers().subscribe(
-
-  res=>{
-    console.log(res);
-    this.users=res;
-  },
-  err=>{
-    console.log(err)
-  }
-)
+    //declarer fonction dans ngOnInit
+this.getAllusers()
   }
 
+  //nom de fonction de liste 
+getAllusers(){
 
+  this._listservice.getUsers().subscribe(
+
+    res=>{
+      console.log(res);
+      this.users=res;
+    },
+    err=>{
+      console.log(err)
+    }
+  )
+}
 
 }

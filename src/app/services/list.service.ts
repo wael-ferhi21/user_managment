@@ -16,8 +16,9 @@ export class ListService {
  
 
 
+  //correction path getusers selon backend
   getUsers(): Observable<User[]> {
-    return this.http.get<User[]>(`${environment.apiUrl}/user/all`);
+    return this.http.get<User[]>(`${environment.apiUrl}/users`);
    
   }
 }
