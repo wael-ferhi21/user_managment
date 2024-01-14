@@ -1,4 +1,4 @@
-<table class="table" *ngFor="let item of users">
+<table class="table" >
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -8,7 +8,8 @@
       </tr>
     </thead>
     <tbody class="table-group-divider">
-      <tr>
+      <!--declare  ngfore de liste  dans tr de tbody-->
+      <tr *ngFor="let item of users">
         <th scope="row">1</th>
         <td>{{item.nom}}</td>
         <td>{{item.prenom}}</td>
