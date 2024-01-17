@@ -7,6 +7,7 @@ import { SignupComponent } from './signup/signup.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListComponent } from './list/list.component';
+import { UpadteComponent } from './upadte/upadte.component';
 
 
 
@@ -16,6 +17,7 @@ import { ListComponent } from './list/list.component';
     AppComponent,
     SignupComponent,
     ListComponent,
+    UpadteComponent,
   
   ],
   imports: [

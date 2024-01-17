@@ -1,0 +1,34 @@
+
+<div class="container">
+    <div class="form-container">
+    
+    <div class="form-card">
+        <div class='card-body'>
+        
+            <div class="welcome"> Veuillez remplir ce formulaire la ! </div>
+            <!--Declare fonction d'ajout dans form par ngsubmit-->
+         <form>
+            <div class="inputs">
+            <input [(ngModel)] ="user.nom"type="text" name="nom" placeholder="saisir votre nom ">
+            <input [(ngModel)]= "user.prenom" type="text" name="prenom" placeholder="saisir votre prenom ">
+            <input [(ngModel)] ="user.email" type="email" name="email" placeholder="saisir votre email ">
+            <input [(ngModel)] ="user.password" type="password" name="password" placeholder="saisir votre mot de passe ">
+            <input [(ngModel)]= "user.cin"  type="number" name="cin" placeholder="saisir votre cin">
+            <input [(ngModel)] ="user.age" type="number" name="age" placeholder="saisir votre age ">
+            </div>
+
+            <!-- Ajouter type submit au button Ajouter -->
+            <button  (click)="update()"  type="submit" class="signup-btn"> Ajouter</button>
+            
+          
+        
+            
+        </form>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    
+    
+

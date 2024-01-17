@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ListService } from '../services/list.service';
+import { User } from '../models/user';
 
 @Component({
   selector: 'app-list',
@@ -8,6 +9,7 @@ import { ListService } from '../services/list.service';
 })
 export class ListComponent implements OnInit {
   users:any;
+
 
   constructor(public _listservice:ListService) { }
 
@@ -36,12 +38,19 @@ deleteUser(userId: number): void {
   
   if (isConfirmed) {
     this._listservice.deleteUser(userId).subscribe(
-      (response) => {
-        this.getAllusers();
+    
+    );
+  }
+}
+updateUser(userId: number,updatedUser:User): void {
+  
+  this._listservice.updateUser(userId,updatedUser).subscribe(
+      
+      err=>{
+        console.log(err)
       }
     );
   }
 }
 
 
-}

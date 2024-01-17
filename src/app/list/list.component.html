@@ -20,6 +20,7 @@
         <td>{{item.prenom}}</td>
         <td>{{item.email}}</td>
         <td><button class="delete-btn" (click)="deleteUser(item.id)">Supprimer</button></td>
+        <td><button [routerLink]="['/update',item.id]" class="btn btn-info">Editer</button></td>
       </tr>
       </tbody>
   </table>
